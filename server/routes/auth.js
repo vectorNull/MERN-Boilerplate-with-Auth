@@ -5,7 +5,10 @@ const {
     signup
 } = require('../controllers/auth')
 
-router.get('/signup',signup);
+const { userSignupValidator } = require('../validators/auth') 
+const { runValidation  } = require('../validators/index') 
+
+router.post('/signup', userSignupValidator, runValidation, signup);
 
 
 module.exports = router;
