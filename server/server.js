@@ -11,9 +11,9 @@ const app = express();
 dotenv.config({ path: './config/.env'})
 app.use(morgan('dev'))
 app.use(bodyparser.json())
-//app.use(cors());
+// app.use(cors());
 if(process.env.NODE_ENV = 'development') {
-    app.use(cors({ origin: 'http//localhost:3000' }))
+    app.use(cors({ origin: 'http://localhost:3000' }))
 }
 
 connectdB();
