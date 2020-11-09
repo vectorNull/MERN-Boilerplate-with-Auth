@@ -90,7 +90,7 @@ const Signup = () => {
         <Layout>
             <div className="col-md-6 offset-md-3">
                 <ToastContainer />
-                <h1 className="p-5 text-center">Signup</h1>
+                <h1 className="p-5 text-center">Sign up</h1>
                 {signupForm()}
                 <br />
             </div>
